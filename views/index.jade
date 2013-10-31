@@ -31,10 +31,11 @@ block content
           var x = "All this is syntax highlighted";
           return x;
         }
-      input(type="submit" value="Submit")
+      input#code(type='hidden', name='code')
+      input(type='submit' value='Submit')
 
   script.
-    console.log(editor);
     document.getElementById('apply').onsubmit = function () {
-
+      document.getElementById('code').value = editor.getSession().getValue();
+      return true;
     };
