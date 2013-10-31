@@ -2,23 +2,39 @@ extends layout
 
 block content
   div
-    form(action='/save', method='post', enctype='multipart/form-data')
+    form#apply(action='/save', method='post', enctype='multipart/form-data')
+      input(type='hidden', name='_csrf', value=token)
       h3 General Information
-      input(type='text', placeholder='First Name')
-      input(type='text', placeholder='Last Name')
-      input(type='text', placeholder='Phone Number')
-      input(type='email', placeholder='Email')
+      input(type='text', placeholder='Name', name='name', required, autofocus)
+      input(type='tel', placeholder='Phone Number', name='phone')
+      input(type='email', placeholder='Email', required, name='email')
       h3 Shcool Information
-      input(type='text', placeholder='School')
-      input(type='text', placeholder='Grade Point Average (GPA)')
-      h3 Experience
+      input(type='text', placeholder='School', name='school', required)
+      input(type='text', placeholder='Grade Point Average (GPA)', name='gpa')
+      h3 Resume (Not required but recommended)
+      input(type='file', name='resume')
       h3 Anwser the Challenge Question
       h4 Question
-      h3 Resume
-      input(type='file', name='resume')
+      p Implement an algorithm that goes from 1 to 100 (inclusive) and prints Fizz when a number is divible by 3,
+        | Buzz when divisible by 5, FizzBuzz when divisible by 3 and 5, or the current number if it's not divisible.
+        | Which number must be a line.<br>
+        | <br>
+        | <strong>Example:</strong><br>
+        | 1<br>
+        | 2<br>
+        | Fizz<br>
+        | 4<br>
+        | Buzz<br>
       div
       div#editor
         function foo(items) {
           var x = "All this is syntax highlighted";
           return x;
         }
+      input(type="submit" value="Submit")
+
+  script.
+    console.log(editor);
+    document.getElementById('apply').onsubmit = function () {
+
+    };
