@@ -12,3 +12,4 @@
   roles:
     - role: mongodb
     - role: nodejs
+    - role: java7
