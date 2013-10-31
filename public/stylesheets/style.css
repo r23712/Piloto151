@@ -6,3 +6,14 @@ body {
 a {
   color: #00B7FF;
 }
+
+.editor-wrapper {
+  position:relative;
+}
+
+#editor { 
+  height: 525px;
+  border: 1px solid #DDD;
+  margin-top: 5px;
+}
+

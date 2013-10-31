@@ -1,5 +1,22 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div
+    form
+      h3 General Information
+      input(type='text', placeholder='First Name')
+      input(type='text', placeholder='Last Name')
+      input(type='text', placeholder='Phone Number')
+      input(type='email', placeholder='Email')
+      h3 Shcool Information
+      input(type='text', placeholder='School')
+      input(type='text', placeholder='Grade Point Average (GPA)')
+      h3 Experience
+      h3 Anwser the Challenge Question
+      h4 Question
+      div
+      div#editor
+        function foo(items) {
+          var x = "All this is syntax highlighted";
+          return x;
+        }
