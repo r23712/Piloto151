@@ -2,7 +2,7 @@ extends layout
 
 block content
   div
-    form
+    form(action='/save', method='post', enctype='multipart/form-data')
       h3 General Information
       input(type='text', placeholder='First Name')
       input(type='text', placeholder='Last Name')
@@ -14,6 +14,8 @@ block content
       h3 Experience
       h3 Anwser the Challenge Question
       h4 Question
+      h3 Resume
+      input(type='file', name='resume')
       div
       div#editor
         function foo(items) {
