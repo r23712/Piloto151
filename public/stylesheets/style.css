@@ -1,3 +1,86 @@
+#site-nav {
+  background: #fff;
+  height: 80px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  box-shadow: 0 0 1px 1px rgba(0,0,0,0.1);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  transition: all 0.35s ease;
+  z-index: 100;
+}
+#site-nav .logo {
+  width: 110px;
+  padding: 11px 0;
+}
+#site-nav .tagline {
+  float: right;
+  text-align: right;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 22px 30px;
+  height: 80px;
+  display: table-cell;
+}
+.btn-outline {
+  background: none;
+  border-radius: 4px;
+  font-size: 0.8em;
+  border: 2px solid #ed6267;
+  border-radius: 3px;
+  color: #ed6267;
+  transition: none;
+  padding: 0.6em 1.2em;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  cursor: pointer;
+  text-rendering: optimizeLegibility;
+  vertical-align: middle;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.btn {
+  color: #fff;
+  font-weight: bold;
+  background-color: #ed6267;
+  font-size: 1em;
+  padding: 0.6em 1.2em;
+  display: inline-block;
+  position: relative;
+  border: 0;
+  text-align: center;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  vertical-align: bottom;
+  text-rendering: optimizeLegibility;
+  border-radius: 2px;
+  vertical-align: middle;
+  border-radius: 2px;
+  background: #ed6267;
+  border: 2px solid #ed6267;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.btn-outline:hover {
+  color: #ed6267;
+}
+
+
+
+
+
+
+
+
 .editor-wrapper {
   position:relative;
 }

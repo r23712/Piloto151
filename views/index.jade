@@ -1,6 +1,17 @@
 extends layout
 
 block content
+  section#site-nav
+    header
+      div.container
+        div.row
+          div.col-sm-12
+            div.row
+              div.col-sm-2.col-xs-4
+                img.logo(src='image/logo.png')
+              nav.col-sm-2.tagline.col-xs-4
+                a.btn-outline(href='#') Apply
+
   div
     form#apply(action='/save', method='post', enctype='multipart/form-data')
       input(type='hidden', name='_csrf', value=token)
