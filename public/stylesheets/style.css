@@ -73,6 +73,42 @@
 .btn-outline:hover {
   color: #ed6267;
 }
+#top-content {
+  background: url('/image/fellow-image.jpg') center center no-repeat;
+  background-size: cover;
+  color: white;
+  margin-top: 60px;
+}
+#top-content .call-out {
+  position: relative;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  box-sizing:border-box;
+}
+.call-out h2 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 4em;
+  line-height: 1.2em;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+.call-out .btn-apply {
+  margin-top: 30px;
+  padding: 1.2em 5em;
+  font-size: 1.3em;
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.2) !important;
+  line-height: 1.3;
+}
+.call-out .btn-apply:hover {
+  color:white;
+  background:#dc5b5f;
+}
 
 
 
