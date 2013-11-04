@@ -109,6 +109,114 @@
   color:white;
   background:#dc5b5f;
 }
+#content-section {
+  padding: 120px 0;
+  float:left;
+  width:100%;
+}
+#content-section .right-column {
+  float:right;
+}
+.content-text {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  font-weight: 300;
+  text-align: center;
+  padding: 112px 0;
+}
+#company {
+  float:left;
+  width:100%;
+}
+#company .companies-grid {
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  float:left;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+#company .full-width-grid {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+#company .grid-item {
+  width: 25%;
+}
+#company .grid-item {
+  border-right: 1px solid #ddd;
+  text-align: center;
+  position: relative;
+  display: inline;
+  float: left;
+}
+#company .front {
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  overflow: hidden;
+}
+#company .foreground img {
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  opacity: 1;
+}
+#company .foreground img {
+  position: relative;
+  z-index: 2;
+}
+.foreground img {
+  max-width: 100%;
+}
+.company-info-grid {
+  float: left;
+  width: 75%;
+  position: relative;
+}
+.company-name {
+  color: #ed6267;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  font-weight: 300;
+  margin: 0 auto;
+  padding-bottom: 4px;
+  border-bottom: 3px solid #f4f5f8;
+  display: inline;
+}
+.company-bio {
+  margin: 52px 0;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  font-weight: 300;
+}
+.second-section-title {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  font-weight: 300;
+  text-align: center;
+  width: 575px;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+  border-bottom: 3px solid #f4f5f8;
+}
+.second-section-text {
+  text-align: left;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+.intern-requirment {
+  text-align: left;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  font-weight: 300;
+}
 
 
 
