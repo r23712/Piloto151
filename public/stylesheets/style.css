@@ -32,7 +32,7 @@
   border-radius: 3px;
   color: #ed6267;
   transition: none;
-  padding: 0.6em 1.2em;
+  padding: 0.65em 1.2em 0.6em;
   display: inline-block;
   position: relative;
   text-align: center;
@@ -190,8 +190,8 @@
 }
 .company-bio {
   margin: 52px 0;
-  font-size: 1.2em;
-  line-height: 1.4em;
+  font-size: 1.1em;
+  line-height: 1.5em;
   font-weight: 300;
 }
 .second-section-title {
@@ -217,20 +217,72 @@
   line-height: 1.5em;
   font-weight: 300;
 }
-
-
-
-
-
-
-
-
+.application-section-name {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  font-weight: 600;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #f4f5f8;
+}
+.form-input {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background-color: white;
+  -webkit-box-shadow: inset 0 1px 5px rgba(0,0,0,0.1);
+  -moz-box-shadow: inset 0 1px 5px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 5px rgba(0,0,0,0.1);
+  border: 1px solid #d6d9dd;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  width: 291px;
+  margin-bottom: 0;
+  padding-left: 10px;
+  height: 36px;
+  line-height: 27px;
+  margin: 5px 0 20px;
+}
+.submit-wrapper {
+  float:left;
+}
+.question-text {
+  margin: 25px 0 25px;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+.question-example-editor {
+  background: rgb(8,34,64);
+  padding: 15px 35px;
+  color: rgb(46,197,93);
+  font-weight: 300;
+  font-size: 1.1em;
+  line-height: 1.4em;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+}
+.submit-wrapper .question-btn {
+  padding: 15px 60px;
+  font-weight: 300;
+  margin-top: 40px;
+  float:right;
+  color:white;
+}
+.question-btn:hover {
+  color:white;
+  background:#dc5b5f;
+}
 .editor-wrapper {
   position:relative;
 }
 
 #editor { 
-  height: 525px;
+  height: 225px;
   border: 1px solid #DDD;
   margin-top: 5px;
 }
