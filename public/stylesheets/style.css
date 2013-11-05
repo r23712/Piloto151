@@ -315,6 +315,10 @@
 .footer-text-right a, .footer-text-right a:hover {
   color:white;
 }
+.top-application-form {
+  float:left;
+  width:100%;
+}
 @media (min-width:990px) and (max-width: 1200px){
   .content-text {
     padding: 60px 0;

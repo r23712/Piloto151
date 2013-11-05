@@ -20,7 +20,7 @@ block content
             div.call-out
               h2 Be part of the first internship exchange program for developers.
               div
-                a.btn.btn-apply(href='#') Apply Now
+                a.btn.btn-apply(href='#bottom') Apply Now
   section#content-section
     main
       div.container
@@ -99,6 +99,7 @@ block content
           div(style='padding:40px 60px 0;')
             h2.company-name About Piloto 151
             p.company-bio Piloto 151 is the first coworking space in San Juan, Puerto Rico. Our mission is to contribute to the strengthening of the Island’s entrepreneurship ecosystem and provide a unique setting for entrepreneurs and professionals to work, collaborate and grow. 
+  div#bottom.top-application-form
   section#content-section
     main
       div.container
@@ -108,7 +109,7 @@ block content
               form#apply(action='/save', method='post', enctype='multipart/form-data')
                 input(type='hidden', name='_csrf', value=token)
                 div.col-sm-12
-                  div.bottom
+                  div
                     h3.application-section-name General Information
                   div
                     input.form-input(type='text', placeholder='Name', name='name', required, autofocus)
