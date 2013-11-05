@@ -8,9 +8,10 @@ block content
           div.col-sm-12
             div.row
               div.col-sm-2.col-xs-4
-                img.logo(src='image/logo.png', alt='Piloto 151')
+                a(href='#')
+                  img.logo(src='image/logo.png', alt='Piloto 151')
               nav.col-sm-2.tagline.col-xs-4
-                a.btn-outline(href='#') Apply
+                a.btn-outline(href='#bottom') Apply
   section#top-content(style='height:612px')
     main
       div.container
@@ -27,8 +28,8 @@ block content
           div.col-sm-12.col-xs-12
             div.row
               div.col-sm-12
-                div.col-sm-5.col-xs-12
-                  img(src='image/sopr-piloto.png', alt='Piloto + Startups of Puerto Rico')
+                div.col-sm-5.col-xs-12.col-md-5
+                  img.image-response(src='image/sopr-piloto.png', alt='Piloto + Startups of Puerto Rico')
                 div.col-sm-6.col-xs-12.right-column
                   h2.content-text Piloto 151, in conjunction with its partners at Startups of Puerto Rico, launches the first internship exchange program designed to provide talented, Puerto Rican developers with the opportunity to intern at up and coming startups in the US mainland.
   section#company
@@ -107,7 +108,7 @@ block content
               form#apply(action='/save', method='post', enctype='multipart/form-data')
                 input(type='hidden', name='_csrf', value=token)
                 div.col-sm-12
-                  div
+                  div.bottom
                     h3.application-section-name General Information
                   div
                     input.form-input(type='text', placeholder='Name', name='name', required, autofocus)
@@ -146,9 +147,31 @@ block content
                 div.col-sm-12.submit-wrapper
                   input#code(type='hidden', name='code')
                   input.btn.question-btn(type='submit' value='Submit')
+  section#footer
+    footer
+      div.container.footer-wrapper
+        div.row
+          div.col-sm-12
+            div.row
+              div.col-sm-7
+                p.footer-text Piloto 151, in conjunction with its partners at Startups of Puerto Rico, launches the first internship exchange program designed to provide talented, Puerto Rican developers with the opportunity to intern at up and coming startups in the US mainland.
+              div.col-sm-5(style='text-align:right;')
+                h4.footer-text-right Visit <a href='http://piloto151.com'>Piloto 151</a>.
+                h5.footer-text-right © 2013 Piloto 151 Fellows
+
+
+
+
+
 
   script.
     document.getElementById('apply').onsubmit = function () {
       document.getElementById('code').value = editor.getSession().getValue();
       return true;
     };
+  script
+    $("document").ready ->
+      $(".bottom").click ->
+        $("html, body").animate
+          scrollTop: $(".top").offset().top
+        , 1000
