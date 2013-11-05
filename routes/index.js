@@ -18,10 +18,6 @@ exports.save = function (req, res) {
       }
     ]
   }, function (e, json) {
-    if (e) {
-      res.send(500);
-    } else {
-      res.send(200);
-    }
+    res.redirect('http://piloto151.com');
   });
 };
