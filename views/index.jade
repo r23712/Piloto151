@@ -170,9 +170,3 @@ block content
       document.getElementById('code').value = editor.getSession().getValue();
       return true;
     };
-  script
-    $("document").ready ->
-      $(".me").click ->
-        $("html, body").animate
-          scrollTop: $(".him").offset().top
-        , 1000
